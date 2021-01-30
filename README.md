@@ -202,7 +202,7 @@ Option scale should be 0.01u for minimum grid size in the layout
 
 1.  Drag with right click to zoom and analyse the plot and calculate delays.
 
-## **Day 4 Layout Timing Analysis and CTS**
+## **Day 4 & 5 Layout Timing Analysis and CTS and Routing**
 
 Input and output ports must be at the intersection of vertical and horizontal tracks and width should be an odd multiple of track's horizontal pitch. Height odd multiple of vertical pitch.
 
@@ -266,6 +266,9 @@ After adding the new cell
 
 ![](media/image45.png)
 
+To reduce slack one could change design switches given in configuration/README.md
+![](media/image53.png)
+
 Placement on new synthesized file
 
 ![](media/image14.png)
@@ -274,4 +277,21 @@ Cts:
 
 ![](media/image16.png)
 
-## **Day 5 Final Steps in RTL to GDSII**
+Invoke the openroad from openlane
+
+openroad
+
+To do timing analysis create a db from lef and def files. db once created can be read multiple times.
+
+read_lef loacation of merged.lef read_def location of picorv32a_cts.def write_db After CTS slack is increased. To reduce slack violation edit the variables for clock buffers, replace the buffers.
+![](media/image54.png)
+
+Routing:
+There are two types of routing in the physical design process, global routing and detailed routing. Global routing allocates routing resources that are used for connections. It also does track assignment for a particular net.
+
+Detailed routing does the actual connections. Different constraints that are to be taken care during the routing are DRC, wire length, timing etc. Openlane tools for routing:
+
+FastRoute - Performs global routing to generate a guide file for the detailed router
+TritonRoute - Performs detailed routing
+SPEF-Extractor - Performs SPEF extraction
+run_routing
