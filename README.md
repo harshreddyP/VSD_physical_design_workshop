@@ -266,8 +266,8 @@ After adding the new cell
 
 ![](media/image45.png)
 
-To reduce slack one could change design switches given in configuration/README.md
-![](media/image53.png)
+To reduce slack one could change design switches given in configuration/README.md, they can be changed on the fly from the openlane command line using set.
+![](media/image54.png)
 
 Placement on new synthesized file
 
@@ -284,7 +284,7 @@ openroad
 To do timing analysis create a db from lef and def files. db once created can be read multiple times.
 
 read_lef loacation of merged.lef read_def location of picorv32a_cts.def write_db After CTS slack is increased. To reduce slack violation edit the variables for clock buffers, replace the buffers.
-![](media/image54.png)
+![](media/image53.png)
 
 Routing:
 There are two types of routing in the physical design process, global routing and detailed routing. Global routing allocates routing resources that are used for connections. It also does track assignment for a particular net.
