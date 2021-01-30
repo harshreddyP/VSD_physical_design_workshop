@@ -295,3 +295,8 @@ FastRoute - Performs global routing to generate a guide file for the detailed ro
 TritonRoute - Performs detailed routing
 SPEF-Extractor - Performs SPEF extraction
 run_routing
+
+## **Acknowledgements**
+> Praharsha Mahurkar, Teaching Assistant(VSD Corp. Pvt. Ltd)
+> Nickson Jose, Intern(VSD Corp. Pvt. Ltd)
+> Kunal Ghosh, Co-founder (VSD Corp. Pvt. Ltd)
