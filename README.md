@@ -134,7 +134,7 @@ The synthesis step also performs STA(standard timing analysis) and there is no n
 
 ## **Day 2 Chip Floorplanning and Standard Cells**
 
-**~Floorplan~**
+**Floorplan**
 
 ![](media/image6.png)
 
@@ -146,7 +146,7 @@ Magic is used to view layout. Tech file corresponds to technology information an
 
 ![](media/image28.png)
 
-^Run\ Placement:^
+### **Placement**
 
 ![](media/image39.png)
 
